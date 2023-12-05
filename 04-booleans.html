@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Booleans</title>
+</head>
+<body>
+    <script>
+        //Booleans : true and false
+
+        console.log(typeof true);
+
+        let num1 = 5;
+        let num2 = 3;
+
+        if (num1 > num2){
+            console.log('Equal');
+        } else{
+            console.log('Not Equal');
+        }
+
+        /*
+            In JS we can use ==/!= and ===/!== to check if two variables 
+            are equal or not. The main difference is that ==/!==
+            first converts the variables in same type and then checks, 
+            which is not the right way. So it is recommended to use 
+            ===/!== in JS.
+        */
+
+        let num3 = 5;
+        let num4 = '5.00';
+
+        console.log(num3 == num4);  //Outputs true
+        console.log(num3 === num4); // Outputs false
+
+        console.log(num3 != num4);  //Outputs false
+        console.log(num3 !== num4); //Outputs true
+    </script>
+</body>
+</html>
