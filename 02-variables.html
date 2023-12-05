@@ -5,22 +5,46 @@
 </head>
 <body>
     <script>
-        // let keyword is used to create variables in JS 
 
+        /* Ways to create variables in JS : 
+            1. let : can  be changed anytime, anywhere in code 
+            2. const : can not be changed later
+            3. var : not used in new JavaScript
+        */
+        
         let variable1 = 2;
         let variable2 = 2;
-        let addition = variable1 + variable2;
 
-        console.log('Variable1 =',addition);
+        const addition = variable1 + variable2;
         console.log(addition + 2);
+
+        var variable3 = 5;
+
+        // Interpolation (``)
+        // Temple string using ${}
+        console.log(`Variable1 = ${variable1}`);
+        
 
         let message = 'hello';
         console.log(message);
 
-        //Changing the value of avariable 
+        //Changing the value of a variable 
         variable1 = 5;
         console.log(variable1);
 
+        /*Variable naming conventions : 
+            1. camelCase : cartQuantity
+            2. PascalCase : CartQuantity
+            3. kebab-case : cart-quantity
+            4. snake_case : cart_quantity
+        */
+
+        //typeof is used to check athe data type of a variable
+
+        console.log(typeof addition);
+        console.log(typeof message);
+
+        
         alert('See Console');
     </script>
 </body>
