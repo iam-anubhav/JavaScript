@@ -25,15 +25,15 @@
                 if (playerMove === computerMove){
                     result = 'Tie!';
                 } else if(computerMove === 'Paper') {
-                    result = 'You Win!';
-                } else if (computerMove === 'Scissors'){
                     result = 'You Lose!';
+                } else if (computerMove === 'Scissors'){
+                    result = 'You Win!';
                 }
             } else if(playerMove === 'Paper'){
                 if (playerMove === computerMove){
                     result = 'Tie!';
                 } else if(computerMove === 'Rock') {
-                    result = 'You Lose!';
+                    result = 'You Win!';
                 } else if (computerMove === 'Scissors'){
                     result = 'You Lose!';
                 }
@@ -49,7 +49,7 @@
 
             alert(`You picked ${playerMove}. Computer picked ${computerMove}. ${result}`);
         }
-        
+
         function pickComputerMove(){
             let randomNum = 0;
             let computerMove = '';
